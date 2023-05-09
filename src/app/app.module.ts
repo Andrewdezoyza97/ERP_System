@@ -22,12 +22,7 @@ import { HttpClientModule } from '@angular/common/http';
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
-    RouterModule.forRoot([
-      {path:'',component:UserLogingComponent},
-      {path:'app-user-logging', component:UserLogingComponent},
-      {path:'app-user-signning', component:UserSignningComponent},
-      {path:'app-user-dashboard', component:UserDashboardComponent}
-  ]),
+    RouterModule.forRoot([]),
   ],
   providers: [],
   bootstrap: [AppComponent]

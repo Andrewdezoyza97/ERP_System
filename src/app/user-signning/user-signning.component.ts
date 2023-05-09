@@ -12,9 +12,8 @@ export class UserSignningComponent implements OnInit {
   email: string = '';
   name: string = "";
   password: string = '';
-  http: any;
-
-  constructor(private router: Router, http: HttpClient) { }
+  
+  constructor(private router: Router, private http: HttpClient) { }
 
   ngOnInit(): void { }
 
@@ -24,7 +23,7 @@ export class UserSignningComponent implements OnInit {
       "name": this.name,
       "password": this.password
     };
-    this.http.post("http://localhost:9992/user/create", bodyData)
+    this.http.post("http://localhost:9002/user/create", bodyData)
       .subscribe((resultData: any) => {
         console.log(resultData);
         alert("User Registered Successfully")
