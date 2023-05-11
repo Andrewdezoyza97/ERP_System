@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { user } from '../model/usermodel';
+import { product } from '../model/productmodel';
 
 @Injectable({
   providedIn: 'root'
@@ -32,5 +33,15 @@ export class ApiService {
   //update User Detail
   updateuser(data: user, id: number) {
     return this.http.put<user>("http://localhost:3000/posts/" +id,data)
+  }
+
+  //Add Product
+  addproduct(data: product) {
+    return this.http.post<product>("http://localhost:3000/products", data)
+  }
+
+  //get Product Method
+  getproduct() {
+    return this.http.get<product[]>("http://localhost:3000/products")
   }
 }

@@ -10,6 +10,9 @@ import { UserListComponent } from './dashboard/user-list/user-list/user-list.com
 import { UserAddComponent } from './dashboard/user-add/user-add/user-add.component';
 import { UserUpdateComponent } from './dashboard/user-update/user-update/user-update.component';
 import { LoginSigupComponent } from './user loging-signup/login-sigup/login-sigup.component';
+import { ProductAddComponent } from './dashboard/product-add/product-add/product-add.component';
+import { ProductListComponent } from './dashboard/product-list/product-list/product-list.component';
+import { CommonModule } from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -18,6 +21,8 @@ import { LoginSigupComponent } from './user loging-signup/login-sigup/login-sigu
     UserAddComponent,
     UserUpdateComponent,
     LoginSigupComponent,
+    ProductAddComponent,
+    ProductListComponent,
   ],
   imports: [
     BrowserModule,
@@ -25,6 +30,7 @@ import { LoginSigupComponent } from './user loging-signup/login-sigup/login-sigu
     FormsModule,
     ReactiveFormsModule,
     HttpClientModule,
+    CommonModule,
     RouterModule.forRoot([]),
   ],
   providers: [],
