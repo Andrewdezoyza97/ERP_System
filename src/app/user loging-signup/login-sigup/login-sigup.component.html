@@ -1,0 +1,105 @@
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+<!-- Loging Section -->
+<section class="vh-100" *ngIf="!isshow">
+    <div class="container h-100">
+        <div class="row justify-content-center align-items-center h-100">
+            <div class="col col-xl-9">
+                <div class="card">
+                    <div class="row g-0">
+                        <!-- Image Section -->
+                        <div class="col-md-4 col-lg-6">
+                            <img src="https://img.freepik.com/free-vector/mobile-login-concept-illustration_114360-83.jpg?w=740&t=st=1683813066~exp=1683813666~hmac=878b5dbf88adf33506910eb02b665a4e706060496b4cd370d4f9062b32542a17"
+                                class="img-fluid">
+                        </div>
+                        <!-- Form Section -->
+                        <div class="col-md-6 col-lg-6 align-items-center">
+                            <div class="card-body p-4 p-lg-5 text-black">
+                                <form [formGroup]="loginform">
+                                    <div class="d-flex align-items-center mb-3 pb-1">
+                                        <i class="fas fa-cubes fa-2x me-3" style="color: lightskyblue;"></i>
+                                        <span class="h1 fw-bold mb-0">Login</span>
+                                    </div>
+                                    <h5 class="fw-normal mb-3 pb-2" style="letter-spacing: 1px;">Login into your Accont
+                                    </h5>
+
+                                    <div class="form-outline mb-2">
+                                        <label class="form-lable">Email Address</label>
+                                        <input type="email" placeholder="Enter your email address "  formControlName="email" class="form-control form-control-lg">
+                                    </div>
+
+                                    <div class="form-outline mb-2">
+                                        <label class="form-lable">Password</label>
+                                        <input type="password" placeholder="Enter your Password " formControlName="password" class="form-control form-control-lg">
+                                    </div>
+
+                                    <div class="pt-1 mb-3 text-center">
+                                        <button  class="btn btn-dark" [disabled]="this.loginform.invalid" (click)="login()" type="button">Login</button>
+                                    </div>
+                                    <p class="mt-5 pb-lg-2"> Don't have an account?
+                                        <a (click)="registerhere()" style="color: black; cursor: pointer;font-weight: 700;">create a accont
+                                            here</a>
+                                    </p>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Signup Section -->
+<section class="vh-100" *ngIf="isshow">
+    <div class="container h-100">
+        <div class="row justify-content-center align-items-center h-100">
+            <div class="col col-xl-9">
+                <div class="card">
+                    <div class="row g-0">
+                        <!-- Image Section -->
+                        <div class="col-md-4 col-lg-6">
+                            <img src="https://img.freepik.com/free-vector/mobile-login-concept-illustration_114360-83.jpg?w=740&t=st=1683813066~exp=1683813666~hmac=878b5dbf88adf33506910eb02b665a4e706060496b4cd370d4f9062b32542a17"
+                                class="img-fluid">
+                        </div>
+                        <!-- Form Section -->
+                        <div class="col-md-6 col-lg-6 align-items-center">
+                            <div class="card-body p-4 p-lg-5 text-black">
+                                <form [formGroup]=" signupform">
+                                    <div class="d-flex align-items-center mb-3 pb-1">
+                                        <i class="fas fa-cubes fa-2x me-3" style="color: lightskyblue;"></i>
+                                        <span class="h1 fw-bold mb-0">Signup</span>
+                                    </div>
+                                    <h5 class="fw-normal mb-3 pb-2" style="letter-spacing: 1px;">Create your new Account
+                                    </h5>
+
+                                    <div class="form-outline mb-2">
+                                        <label class="form-lable">Name</label>
+                                        <input type="text" placeholder="Enter your Name "  formControlName="name" class="form-control form-control-lg">
+                                    </div>
+
+                                    <div class="form-outline mb-2">
+                                        <label class="form-lable">Email Address</label>
+                                        <input type="email" placeholder="Enter the email address"  formControlName="email" class="form-control form-control-lg">
+                                    </div>
+
+                                    <div class="form-outline mb-2">
+                                        <label class="form-lable">Password</label>
+                                        <input type="password"placeholder="Enter the Password"  formControlName="password" class="form-control form-control-lg">
+                                    </div>
+
+                                    <div class="pt-1 mb-3 text-center">
+                                        <button class ="btn btn-dark" [disabled]="this.signupform.invalid" type="button" (click)="register()">Create Account</button>
+                                    </div>
+                                    <p class="mt-5 pb-lg-2"> Already have an account?
+                                        <a (click)="loginhere()" style="color: black; cursor: pointer;font-weight: 700;">login here</a>
+                                    </p>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

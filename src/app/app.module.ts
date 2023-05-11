@@ -3,24 +3,27 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { UserLogingComponent } from './user-loging/user-loging.component';
 import { RouterModule } from '@angular/router';
-import { UserSignningComponent } from './user-signning/user-signning.component';
-import { UserDashboardComponent } from './user-dashboard/user-dashboard.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { UserListComponent } from './dashboard/user-list/user-list/user-list.component';
+import { UserAddComponent } from './dashboard/user-add/user-add/user-add.component';
+import { UserUpdateComponent } from './dashboard/user-update/user-update/user-update.component';
+import { LoginSigupComponent } from './user loging-signup/login-sigup/login-sigup.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    UserLogingComponent,
-    UserSignningComponent,
-    UserDashboardComponent
+    UserListComponent,
+    UserAddComponent,
+    UserUpdateComponent,
+    LoginSigupComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
+    ReactiveFormsModule,
     HttpClientModule,
     RouterModule.forRoot([]),
   ],

@@ -1,0 +1,73 @@
+{
+  "posts": [
+    {
+      "name": "Andrew",
+      "email": "andrewdezoyza@gmail.com",
+      "streetaddress": "Nabadawewa Road, Moragoda",
+      "city": "Talawa",
+      "province": "North Central",
+      "postalcode": "50230",
+      "usertype": "Admin",
+      "id": 2
+    }
+  ],
+  "signup": [
+    {
+      "name": "",
+      "email": "",
+      "password": "",
+      "id": 1
+    },
+    {
+      "name": "",
+      "email": "",
+      "password": "",
+      "id": 2
+    },
+    {
+      "name": null,
+      "email": null,
+      "password": null,
+      "id": 3
+    },
+    {
+      "name": "",
+      "email": "",
+      "password": "",
+      "id": 4
+    },
+    {
+      "name": "",
+      "email": "",
+      "password": "",
+      "id": 5
+    },
+    {
+      "name": "",
+      "email": "",
+      "password": "",
+      "id": 6
+    },
+    {
+      "name": null,
+      "email": null,
+      "password": null,
+      "id": 7
+    },
+    {
+      "name": "sadd",
+      "email": "sadas",
+      "password": "sadadasd",
+      "id": 8
+    },
+    {
+      "name": "Andrew De Zoyza",
+      "email": "andrew@123.secret",
+      "password": "123",
+      "id": 9
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

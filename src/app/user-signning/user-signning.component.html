@@ -1,4 +1,4 @@
-<html class="h-full bg-white">
+<!-- <html class="h-full bg-white">
 
 <body class="h-full">
   <div class="flex min-h-full flex-col justify-center px-6 py-12 lg:px-8">
@@ -13,7 +13,7 @@
         <div>
           <label for="email" class="block text-sm font-medium leading-6 text-gray-900">Email address</label>
           <div class="mt-2">
-            <input id="email" name="email" type="email" [(ngModel)]="name" [ngModelOptions]="{standalone:true}"
+            <input id="email" name="email" type="email" [(ngModel)]="email" [ngModelOptions]="{standalone:true}"
               autocomplete="email" required
               class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
           </div>
@@ -22,7 +22,7 @@
         <div>
           <label for="email" class="block text-sm font-medium leading-6 text-gray-900">Name</label>
           <div class="mt-2">
-            <input id="name" name="name" type="name" [(ngModel)]="email" [ngModelOptions]="{standalone:true}"
+            <input id="name" name="name" type="name" [(ngModel)]="name" [ngModelOptions]="{standalone:true}"
               autocomplete="name" required
               class="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6">
           </div>
@@ -81,17 +81,15 @@
               </div>
             </div>
 
-            <fieldset>
-              <legend class="text-sm font-semibold leading-6 text-gray-900">Select User Type</legend>
-              <div class="mt-6 space-y-6">
-                <div class="flex items-center gap-x-3">
-                  <input id="usertype" name="usertype" type="radio"
-                    class="h-4 w-4 border-gray-300 text-indigo-600 focus:ring-indigo-600"  [(ngModel)]="usertype"
-                    [ngModelOptions]="{standalone:true}">
-                  <label for="usertype" class="block text-sm font-medium leading-6 text-gray-900">Vendor</label>
-                </div>
-              </div>
-            </fieldset>
+            
+            <div class="form-group">
+              <label for="usertype">User Type</label>
+              <select class="form-select" id="usertype" name="usertype"
+                  [(ngModel)]="usertype"  [ngModelOptions]="{standalone:true}">
+                  <option>Vendor </option>
+              </select>
+          </div>
+
           </div>
         </div>
 
@@ -112,3 +110,5 @@
 </body>
 
 </html>
+
+ -->
