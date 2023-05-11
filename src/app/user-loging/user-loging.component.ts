@@ -28,7 +28,7 @@ export class UserLogingComponent implements OnInit {
       password: this.password
     };
 
-    this.http.post("http://localhost:9002/user/login", bodyData)
+    this.http.post("http://127.0.0.1:9002/user/login", bodyData)
       .subscribe((resultData: any) => {
         console.log(resultData);
 
