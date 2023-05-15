@@ -13,6 +13,7 @@ import { LoginSigupComponent } from './user loging-signup/login-sigup/login-sigu
 import { ProductAddComponent } from './dashboard/product-add/product-add/product-add.component';
 import { ProductListComponent } from './dashboard/product-list/product-list/product-list.component';
 import { CommonModule } from '@angular/common';
+import { ProductUpdateComponent } from './dashboard/product-update/product-update/product-update.component';
 
 @NgModule({
   declarations: [
@@ -23,6 +24,7 @@ import { CommonModule } from '@angular/common';
     LoginSigupComponent,
     ProductAddComponent,
     ProductListComponent,
+    ProductUpdateComponent,
   ],
   imports: [
     BrowserModule,

@@ -30,7 +30,7 @@
         <!-- Form section -->
         <div class="col-md-6">
             <div class="card">
-                <h5>Add User</h5>
+                <h5>Update User Details</h5>
                 <div class="row">
                     <form >
                         <div class="form-group mb-1">
@@ -64,9 +64,16 @@
                         </div>
 
                         <div class="form-group mb-1">
-                            <label for="TnputUserType">User Type</label>
-                            <input type="text" class="form-control" [(ngModel)]="userdata.usertype" name="usertype" placeholder="Enter User Type">
+                            <label for="input usertype">User Type</label>
+                            <select class="form-select" aria-label="Default select example"  
+                            [(ngModel)]="userdata.usertype" name="usertype">
+                                <option selected>Select the Product type</option>
+                                <option value="admin">Admin</option>
+                                <option value="employee">Employee</option>
+                                <option value="vendor">Vendor</option>
+                            </select>
                         </div>
+                        
 
                         <div class="text-center mt-2">
                             <button type="submit" (click)="updateuser()" class="btn btn-primary">Update User</button> &nbsp;

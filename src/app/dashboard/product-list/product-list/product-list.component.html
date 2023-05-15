@@ -58,9 +58,9 @@
               <td>{{item.producttype}}</td>
               <td>{{item.quantity}}</td>
               <td>{{item.price}}</td>
-              <td><button style="color: blue;" routerLink="/app-user-update" class="fas fa-edit"></button>
+              <td><button style="color: blue;" routerLink="/app-product-update/{{item.id}}" class="fas fa-edit"></button>
                 &nbsp;
-                <button style="color: red;"  class="fas fa-trash"></button>
+                <button style="color: red;" (click)="deleteproduct(item.id)" class="fas fa-trash"></button>
               </td>
             </tr>
           </tbody>

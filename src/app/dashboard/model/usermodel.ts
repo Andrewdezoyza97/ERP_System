@@ -13,6 +13,7 @@ export class signup {
     name?: string;
     email?: string;
     password?: string;
+    usertype?: string;
 }
 
 export class login {

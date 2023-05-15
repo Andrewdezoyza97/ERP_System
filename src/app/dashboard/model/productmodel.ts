@@ -4,6 +4,6 @@ export class product {
     decription?:string;
     productcode?: string;
     producttype?: string;
-    quantity?: number;
-    price?: number;
+    quantity?: number |any;
+    price?: number|any;
 }

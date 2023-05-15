@@ -66,8 +66,13 @@
                         </div>
 
                         <div class="form-group mb-1">
-                            <label for="TnputUserType">User Type</label>
-                            <input type="text" class="form-control"  formControlName="usertype" placeholder="Enter User Type">
+                            <label for="input usertype" formControlName="usertype">User Type</label>
+                                <select class="form-select" aria-label="user select">
+                                    <option selected>Select the Product type</option>
+                                    <option value="admin">Admin</option>
+                                    <option value="employee">Employee</option>
+                                    <option value="vendor">Vendor</option>
+                                  </select>
                         </div>
 
                         <div class="text-center mt-2">

@@ -8,12 +8,11 @@
       <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
         <div class="hidden sm:ml-6 sm:block">
           <div class="flex space-x-4">
-            <button class="bg-gray-900 text-white rounded-md px-3 py-2 text-sm font-medium" aria-current="page" >User
-              List Dashboard</button>
-
-              <button class="bg-gray-900 text-white rounded-md px-3 py-2 text-sm font-medium" routerLink="/app-user-add" >Add User</button>
-            
-            <button class="btn btn-warning" (click)="logout()" style="align-items: flex-end;" routerLink="/">Logout</button>
+            <button class="bg-gray-900 text-white rounded-md px-3 py-2 text-sm font-medium" aria-current="page" >User Management</button>
+              <button class="bg-gray-900 text-white rounded-md px-3 py-2 text-sm font-medium" routerLink="/app-user-add" >Add New User</button>
+              <button class="bg-gray-900 text-white rounded-md px-3 py-2 text-sm font-medium" routerLink="/app-product-list" >Product Management</button>
+              <button class="bg-gray-900 text-white rounded-md px-3 py-2 text-sm font-medium" routerLink="/app-product-add" >Add New Product</button>
+              <button class="btn btn-warning"  (click)="logout()"  routerLink="/">Logout</button>
           </div>
         </div>
       </div>
@@ -49,7 +48,7 @@
         </thead> 
         <tbody>
           <tr *ngFor="let item of data">
-            <th scope="row">1</th>
+            <td>{{item.id}}</td>
             <td>{{item.name}}</td>
             <td>{{item.email}}</td>
             <td>{{item.streetaddress}}</td>

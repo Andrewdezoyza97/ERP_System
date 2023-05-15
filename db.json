@@ -7,7 +7,7 @@
       "city": "Talawa",
       "province": "North Central",
       "postalcode": "50230",
-      "usertype": "Admin",
+      "usertype": "admin",
       "id": 2
     }
   ],
@@ -17,47 +17,42 @@
       "email": "andrew@123.secret",
       "password": "123",
       "id": 9
+    },
+    {
+      "name": "tester",
+      "email": "tester@gmail.com",
+      "password": "1234",
+      "usertype": "Vendor",
+      "id": 10
     }
   ],
   "products": [
     {
-      "productname": "",
-      "productcode": "",
-      "producttype": "",
-      "quantity": "",
+      "productname": "Hammer",
+      "decription": "This is Hammer",
+      "productcode": "1256",
+      "producttype": "used",
+      "quantity": 15,
+      "price": 20,
       "id": 1
     },
     {
       "productname": "",
+      "decription": "",
       "productcode": "",
-      "producttype": "",
-      "quantity": "",
+      "producttype": "3",
+      "quantity": 50,
+      "price": "",
       "id": 2
     },
     {
-      "productname": "dasdassda",
-      "productcode": "jkh",
+      "productname": "Laptop",
+      "decription": "this iks laptop",
+      "productcode": "5145454",
       "producttype": "",
       "quantity": 50,
+      "price": 200000,
       "id": 3
-    },
-    {
-      "productname": "dasd",
-      "decription": "dasdas",
-      "productcode": "dasdas",
-      "producttype": "",
-      "quantity": 2,
-      "price": 500,
-      "id": 4
-    },
-    {
-      "productname": "asda",
-      "decription": "khbkj",
-      "productcode": "khbk",
-      "producttype": "",
-      "quantity": 12,
-      "price": 12,
-      "id": 5
     }
   ]
 }

@@ -20,4 +20,11 @@ export class ProductListComponent implements OnInit{
       this.data = response;
     })
   }
+
+  deleteproduct(id: number) {
+    this.api.deleteproduct(id).subscribe(response => {
+      alert("Product Deleted Successfully")
+      this.getproduct();
+    })
+  }
 }

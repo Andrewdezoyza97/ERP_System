@@ -32,57 +32,63 @@
         <div class="col-sm-5">
             <div class="image">
                 <img src="https://img.freepik.com/free-vector/online-order-delivery-service-shipment-internet-shop-basket-cardboard-boxes-buyer-with-laptop-delivery-note-monitor-screen-parcel_335657-1169.jpg?w=740&t=st=1683839362~exp=1683839962~hmac=ad6246f95e4018bec5960594910917eddbee90ffd2fed62bc2f7fc3875bf313e"
-                class="img-fluid">
+                    class="img-fluid">
             </div>
         </div>
         <!-- Form section -->
         <div class="col-md-6">
             <div class="card">
-                <h5>Add Product</h5>
+                <h5>Update Product Details</h5>
                 <div class="row">
-                    <form [formGroup]="productform">
+                    <form>
                         <div class="form-group mb-1">
                             <label for="InputName">Product Name</label>
-                            <input type="text" class="form-control" formControlName="productname"
-                                placeholder="Enter Product Name">
+                            <input type="text" class="form-control" 
+                            [(ngModel)]="productdata.productname" name="productname"
+                            placeholder="Enter Product Name">
                         </div>
 
                         <div class="form-group mb-1">
                             <label for="inputproductcode">Product Code</label>
-                            <input type="text" class="form-control" formControlName="productcode"
+                            <input type="text" class="form-control" 
+                            [(ngModel)]="productdata.productcode" name="productcode"
                                 placeholder="Enter Product Code">
                         </div>
 
                         <div class="form-group mb-1">
                             <label for="TnputStreetAddress">Product Description</label>
-                            <input type="text" class="form-control" formControlName="decription"
+                            <input type="text" class="form-control"
+                            [(ngModel)]="productdata.decription" name="decription"
                                 placeholder="Enter the Product Description">
                         </div>
 
                         <div class="form-group mb-1">
-                            <label for="input producttype" formControlName="producttype">Product Type</label>
-                                <select class="form-select" aria-label="Default select example">
-                                    <option selected>Select the Product type</option>
-                                    <option value="Brand New">Brand New</option>
-                                    <option value="Used">Used</option>
-                                    <option value="Other">Other</option>
-                                  </select>
+                            <label for="input producttype">Product Type</label>
+                            <select class="form-select" aria-label="Default select example"  
+                            [(ngModel)]="productdata.producttype" name="producttype">
+                                <option selected>Select the Product type</option>
+                                <option value="brand new">Brand New</option>
+                                <option value="used">Used</option>
+                                <option value="other">Other</option>
+                            </select>
                         </div>
 
                         <div class="form-group mb-1">
                             <label for="inputquantity">Quantity</label>
-                            <input type="number" class="form-control" formControlName="quantity"
-                                placeholder="Enter the Availble Quantity">
+                            <input type="number" class="form-control" 
+                            [(ngModel)]="productdata.quantity" name="quantity" placeholder="Enter the Availble Quantity">
+                                
                         </div>
 
                         <div class="form-group mb-1">
                             <label for="inputprice">Price</label>
-                            <input type="number" class="form-control" formControlName="price"
+                            <input type="number" class="form-control" 
+                            [(ngModel)]="productdata.price" name="price"
                                 placeholder="Enter the Price of One">
                         </div>
 
                         <div class="text-center mt-2">
-                            <button type="submit" class="btn btn-primary"  (click)=" addproduct(this.productform.value)">Add Product</button> &nbsp;
+                            <button type="submit" class="btn btn-primary" (click)="updateproduct()">Update Product</button> &nbsp;
                             <button type="submit" class="btn btn-success" routerLink="/app-product-list">Back </button>
                         </div>
                     </form>

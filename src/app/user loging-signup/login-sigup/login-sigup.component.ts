@@ -22,7 +22,8 @@ export class LoginSigupComponent implements OnInit {
     this.signupform = this.formBuilder.group({
       name: ['', Validators.required],
       email: ['', Validators.required],
-      password: ['', Validators.required]
+      password: ['', Validators.required],
+      usertype: ['', Validators.required]
     })
     //login User
     this.loginform = this.formBuilder.group({

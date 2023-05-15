@@ -35,6 +35,8 @@ export class ApiService {
     return this.http.put<user>("http://localhost:3000/posts/" +id,data)
   }
 
+
+
   //Add Product
   addproduct(data: product) {
     return this.http.post<product>("http://localhost:3000/products", data)
@@ -42,6 +44,21 @@ export class ApiService {
 
   //get Product Method
   getproduct() {
-    return this.http.get<product[]>("http://localhost:3000/products")
+    return this.http.get<product[]>("http://localhost:3000/products/")
+  }
+
+  //delete Product Method
+  deleteproduct(id: number) {
+    return this.http.delete<product>("http://localhost:3000/products/" + id)
+  }
+
+  //Geting Data to Product edit
+  gettingproduct(id: number) {
+    return this.http.get<product>("http://localhost:3000/products/" + id)
+  }
+
+  //update Product Details
+  updateproduct(data: product, id: number) {
+    return this.http.put<product>("http://localhost:3000/products/" +id,data)
   }
 }

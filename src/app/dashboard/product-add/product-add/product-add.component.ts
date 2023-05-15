@@ -21,7 +21,7 @@ export class ProductAddComponent implements OnInit{
       decription: ['', Validators.required],
       productcode: ['', Validators.required],
       producttype: ['', Validators.required],
-      quantity: ['', Validators.required],
+      quantity: [Number, Validators.required],
       price: ['', Validators.required],
     })
   }
