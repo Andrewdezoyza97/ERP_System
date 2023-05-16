@@ -8,6 +8,7 @@ import { authGuard } from './shared/auth.guard';
 import { ProductAddComponent } from './dashboard/product-add/product-add/product-add.component';
 import { ProductListComponent } from './dashboard/product-list/product-list/product-list.component';
 import { ProductUpdateComponent } from './dashboard/product-update/product-update/product-update.component';
+import { HomeComponent } from './dashboard/home/home.component';
 
 const routes: Routes = [
   { path: '',redirectTo:'app-login-sigup', pathMatch:'full'},
@@ -18,6 +19,7 @@ const routes: Routes = [
   {path:'app-product-add', component:ProductAddComponent},
   {path:'app-product-list', component:ProductListComponent},
   {path:'app-product-update/:id', component:ProductUpdateComponent},
+  {path:'app-home', component:HomeComponent}
 
 
 ];

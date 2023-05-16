@@ -29,6 +29,7 @@ export class ApiService {
   gettingdata(id: number) {
     return this.http.get<user>("http://localhost:3000/posts/" + id)
   }
+  
 
   //update User Detail
   updateuser(data: user, id: number) {

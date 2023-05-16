@@ -14,6 +14,8 @@ import { ProductAddComponent } from './dashboard/product-add/product-add/product
 import { ProductListComponent } from './dashboard/product-list/product-list/product-list.component';
 import { CommonModule } from '@angular/common';
 import { ProductUpdateComponent } from './dashboard/product-update/product-update/product-update.component';
+import { HomeComponent } from './dashboard/home/home.component';
+import { NavigationComponent } from './dashboard/navigationmenu/navigation/navigation.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +27,8 @@ import { ProductUpdateComponent } from './dashboard/product-update/product-updat
     ProductAddComponent,
     ProductListComponent,
     ProductUpdateComponent,
+    HomeComponent,
+    NavigationComponent,
   ],
   imports: [
     BrowserModule,

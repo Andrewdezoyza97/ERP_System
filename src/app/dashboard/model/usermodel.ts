@@ -1,6 +1,7 @@
 export class user {
     id?: number | any;
     name?: string;
+    password?: string;
     email?: string;
     streetaddress?: string;
     city?: string;
@@ -13,7 +14,6 @@ export class signup {
     name?: string;
     email?: string;
     password?: string;
-    usertype?: string;
 }
 
 export class login {

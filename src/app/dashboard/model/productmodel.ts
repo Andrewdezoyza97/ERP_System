@@ -6,4 +6,5 @@ export class product {
     producttype?: string;
     quantity?: number |any;
     price?: number|any;
+    image?:string ='';
 }
